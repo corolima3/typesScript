@@ -1,0 +1,27 @@
+export interface Movie {
+  title: string;
+  description: string;
+  thumbnail: string;
+}
+
+export interface Item {
+  title: string;
+  description: string;
+  thumbnail: {
+    path: string;
+    extension: string;
+  }
+}
+export interface Props {
+  height?: number;
+  src?: string;
+}
+export interface PropsProvider {
+  children: JSX.Element | JSX.Element[]
+}
+
+export interface AppState {
+  name: string;
+  url: string;
+  time: string;
+}
